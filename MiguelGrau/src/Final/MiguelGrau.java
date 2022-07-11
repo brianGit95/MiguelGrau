@@ -35,7 +35,7 @@ public class MiguelGrau {
                     new NotaCurso(Curso.Matematica,0,0,0,0),
                     new NotaCurso(Curso.Comunicacion,0,0,0,0),
             }),
-            new Alumno(10,"Pedro","Sedano",NombreSeccion.B,false,new NotaCurso[]{
+            new Alumno(10,"Pierina","Alvarado",NombreSeccion.B,false,new NotaCurso[]{
                     new NotaCurso(Curso.Matematica,0,0,0,0),
                     new NotaCurso(Curso.Comunicacion,0,0,0,0),
             }),

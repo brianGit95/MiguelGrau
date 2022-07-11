@@ -1,5 +1,7 @@
 package Final;
 
+import java.util.Arrays;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Profesor
@@ -67,6 +69,7 @@ public class Profesor
 
             }
             catch (Exception ex){
+                System.out.println(ex.getMessage());
                 System.out.print("Por favor ingrese un numero entre 1 y " + salir);
                 sc.next();
             }
@@ -153,6 +156,8 @@ public class Profesor
 
         for (Alumno alumno : seccion.alumnos) {
 
+            if (alumno == null) continue;
+
             for (NotaCurso notaCurso : alumno.notaCursos) {
 
                 if (notaCurso.curso.name().equals(this.curso.name())) {
@@ -207,6 +212,8 @@ public class Profesor
 
         for (Alumno alumno : seccion.alumnos) {
 
+            if (alumno == null) continue;
+
             for (NotaCurso notaCurso : alumno.notaCursos) {
 
                 if (notaCurso.curso.name().equals(this.curso.name()))
@@ -252,13 +259,15 @@ public class Profesor
 
         for (Alumno alumno : seccion.alumnos) {
 
+            if (alumno == null) continue;
+
             System.out.print(alumno.nombreCompleto() + " : ");
             String asistencia = sc.next();
 
             alumno.asistencia = asistencia.equals("a");
         }
 
-        System.out.println();
+        //System.out.println();
         System.out.println("Las asistencias de los alumnos fueron registradas.");
 
     }
@@ -269,6 +278,9 @@ public class Profesor
         System.out.println("-------------------------------------------------");
 
         for (Alumno alumno : seccion.alumnos) {
+
+            if (alumno == null) continue;
+
             String asistencia = alumno.asistencia ? "Asistio" : "No asistio";
             System.out.println(alumno.nombreCompleto() + " -> " + asistencia);
         }
