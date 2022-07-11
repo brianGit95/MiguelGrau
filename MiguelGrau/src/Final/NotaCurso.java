@@ -7,6 +7,7 @@ public class NotaCurso {
     int revisionCuaderno;
     int trabajoGrupalesDeTrimestre;
     int examenTrimestral;
+    int promedio;
 
     public NotaCurso(Curso curso, int examenOral,int revisionCuaderno,int trabajoGrupalesDeTrimestre,int examenTrimestral)
     {
@@ -15,6 +16,6 @@ public class NotaCurso {
         this.revisionCuaderno = revisionCuaderno;
         this.trabajoGrupalesDeTrimestre = trabajoGrupalesDeTrimestre;
         this.examenTrimestral = examenTrimestral;
+        this.promedio = (examenOral + revisionCuaderno + trabajoGrupalesDeTrimestre + examenTrimestral) / 4;
     }
-
 }

@@ -1,6 +1,5 @@
 package Final;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MiguelGrau {
@@ -17,52 +16,8 @@ public class MiguelGrau {
     };
 
     static Alumno[] alumnosA = new Alumno[15];
-
-    static Alumno[] alumnosB = {
-            new Alumno(6,"Natanael","Figueroa",NombreSeccion.B,false,new NotaCurso[]{
-                    new NotaCurso(Curso.Matematica,0,0,0,0),
-                    new NotaCurso(Curso.Comunicacion,0,0,0,0),
-            }),
-            new Alumno(7,"Pedro","Sedano",NombreSeccion.B,false,new NotaCurso[]{
-                    new NotaCurso(Curso.Matematica,0,0,0,0),
-                    new NotaCurso(Curso.Comunicacion,0,0,0,0),
-            }),
-            new Alumno(8,"Hector","Aspillaga",NombreSeccion.B,false,new NotaCurso[]{
-                    new NotaCurso(Curso.Matematica,0,0,0,0),
-                    new NotaCurso(Curso.Comunicacion,0,0,0,0),
-            }),
-            new Alumno(9,"Bryan","Condor",NombreSeccion.B,false,new NotaCurso[]{
-                    new NotaCurso(Curso.Matematica,0,0,0,0),
-                    new NotaCurso(Curso.Comunicacion,0,0,0,0),
-            }),
-            new Alumno(10,"Pierina","Alvarado",NombreSeccion.B,false,new NotaCurso[]{
-                    new NotaCurso(Curso.Matematica,0,0,0,0),
-                    new NotaCurso(Curso.Comunicacion,0,0,0,0),
-            }),
-    };
-
-    static Alumno[] alumnosC = {
-            new Alumno(11,"Horacio","Quevedo",NombreSeccion.C,false,new NotaCurso[]{
-                    new NotaCurso(Curso.Comunicacion,0,0,0,0),
-                    new NotaCurso(Curso.Historia,0,0,0,0),
-            }),
-            new Alumno(12,"Karla","Eslava",NombreSeccion.C,false,new NotaCurso[]{
-                    new NotaCurso(Curso.Comunicacion,0,0,0,0),
-                    new NotaCurso(Curso.Historia,0,0,0,0),
-            }),
-            new Alumno(13,"Pamela","Lopez",NombreSeccion.C,false,new NotaCurso[]{
-                    new NotaCurso(Curso.Comunicacion,0,0,0,0),
-                    new NotaCurso(Curso.Historia,0,0,0,0),
-            }),
-            new Alumno(14,"Paul","Carrasco",NombreSeccion.C,false,new NotaCurso[]{
-                    new NotaCurso(Curso.Comunicacion,0,0,0,0),
-                    new NotaCurso(Curso.Historia,0,0,0,0),
-            }),
-            new Alumno(15,"Tania","Leon",NombreSeccion.C,false,new NotaCurso[]{
-                    new NotaCurso(Curso.Comunicacion,0,0,0,0),
-                    new NotaCurso(Curso.Historia,0,0,0,0),
-            }),
-    };
+    static Alumno[] alumnosB = new Alumno[15];
+    static Alumno[] alumnosC = new Alumno[15];
 
     static Seccion seccionA = new Seccion(NombreSeccion.A,alumnosA);
     static Seccion seccionB = new Seccion(NombreSeccion.B,alumnosB);
@@ -118,6 +73,37 @@ public class MiguelGrau {
                 new NotaCurso(Curso.Matematica,0,0,0,0),
                 new NotaCurso(Curso.Historia,0,0,0,0),
         });
+
+        alumnosB[0] = new Alumno(6,"Natanael","Figueroa",NombreSeccion.B,false,new NotaCurso[]{
+                new NotaCurso(Curso.Matematica,15,12,0,0),
+                new NotaCurso(Curso.Comunicacion,0,13,0,0)});
+        alumnosB[1] = new Alumno(7,"Pedro","Sedano",NombreSeccion.B,false,new NotaCurso[]{
+                new NotaCurso(Curso.Matematica,20,0,0,0),
+                new NotaCurso(Curso.Comunicacion,0,14,0,0)});
+        alumnosB[2] = new Alumno(8,"Hector","Aspillaga",NombreSeccion.B,false,new NotaCurso[]{
+                new NotaCurso(Curso.Matematica,0,0,0,0),
+                new NotaCurso(Curso.Comunicacion,17,0,0,0)});
+        alumnosB[3] = new Alumno(9,"Bryan","Condor",NombreSeccion.B,false,new NotaCurso[]{
+                new NotaCurso(Curso.Matematica,9,0,0,0),
+                new NotaCurso(Curso.Comunicacion,20,5,0,0)});
+        alumnosB[4] = new Alumno(10,"Pierina","Alvarado",NombreSeccion.B,false,new NotaCurso[]{
+                new NotaCurso(Curso.Matematica,0,0,0,0),
+                new NotaCurso(Curso.Comunicacion,10,0,0,0)});
+        alumnosC[0] = new Alumno(11,"Horacio","Quevedo",NombreSeccion.C,false,new NotaCurso[]{
+                new NotaCurso(Curso.Comunicacion,10,15,0,0),
+                new NotaCurso(Curso.Historia,5,0,0,0)});
+        alumnosC[1] = new Alumno(12,"Karla","Eslava",NombreSeccion.C,false,new NotaCurso[]{
+                new NotaCurso(Curso.Comunicacion,4,13,0,0),
+                new NotaCurso(Curso.Historia,0,0,0,0)});
+        alumnosC[2] = new Alumno(13,"Pamela","Lopez",NombreSeccion.C,false,new NotaCurso[]{
+                new NotaCurso(Curso.Comunicacion,0,0,0,0),
+                new NotaCurso(Curso.Historia,0,0,0,0)});
+        alumnosC[3] = new Alumno(14,"Paul","Carrasco",NombreSeccion.C,false,new NotaCurso[]{
+                new NotaCurso(Curso.Comunicacion,0,0,0,0),
+                new NotaCurso(Curso.Historia,0,0,0,0)});
+        alumnosC[4] = new Alumno(15,"Tania","Leon",NombreSeccion.C,false,new NotaCurso[]{
+                new NotaCurso(Curso.Comunicacion,0,0,0,0),
+                new NotaCurso(Curso.Historia,0,0,0,0)});
 
 
     }
